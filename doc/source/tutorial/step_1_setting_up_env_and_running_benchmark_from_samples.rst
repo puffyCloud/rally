@@ -198,6 +198,7 @@ Note that the Rally input task above uses *regular expressions* to specify the i
    | 5                   | m1.xlarge |   8   |  16384   |           |    160    |
    +---------------------+-----------+-------+----------+-----------+-----------+
 
+Be aware that currently by default Rally creates temporary tenants during the scenario (e.g. ctx_rally_d15bbc68-7c95-4562-a214-bc41daf5434b_tenant_0). This can cause a failure in the previous scenario if the args, such as the flavor, are not set as "public". 
 
 Report generation
 -----------------
